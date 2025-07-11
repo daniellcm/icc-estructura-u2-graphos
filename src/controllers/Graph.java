@@ -29,17 +29,17 @@ public class Graph {
     // Para cada nodo imprimir sus conecciones
     public void printGraph() {
         for (Node node : nodes) {
-        String line = "Vertex " + node.getValue() + ": ";
+        String linea = "Vertex " + node.getValue() + ": ";
         
         for (Node neighbor : node.getNeighbors()) {
-            line += neighbor.getValue() + " -> ";
+            linea += neighbor.getValue() + " -> ";
         }
 
         if (!node.getNeighbors().isEmpty()) {
-            line = line.substring(0, line.length() - 4);
+            linea = linea.substring(0, linea.length() - 4);
         }
 
-        System.out.println(line);
+        System.out.println(linea);
     }
  
     }
